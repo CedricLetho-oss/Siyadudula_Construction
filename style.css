@@ -1,0 +1,458 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #2e2e2e;
+}
+
+/* Header */
+header {
+  background-color: #1b1f3b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.slogan {
+  margin-top: 0.3rem;
+  font-style: italic;
+  color: #f29c1f;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f29c1f;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #f29c1f;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #d1871a;
+}
+
+/* Services Section */
+main {
+  padding: 2rem;
+}
+
+.service {
+  background-color: #ffffff;
+  border-left: 6px solid #7a8a99;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  background-color: #1b1f3b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.about-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #2e2e2e;
+}
+
+.about-section h2 {
+  color: #1b1f3b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.project-images {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-images img {
+  max-width: 100%;
+  height: 600px;
+  border: 4px solid #7a8a99;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-images figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Services Page */
+.services-section {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.services-section h2 {
+  color: #1b1f3b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.services-section .intro {
+  text-align: center;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+/* Grid of services */
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Individual service card */
+.service-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-left: 6px solid #f29c1f;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: #1b1f3b;
+  margin-top: 0;
+}
+
+.service-card p {
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+.contact-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #2e2e2e;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #1b1f3b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section .intro {
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-details, .contact-form {
+  flex: 1 1 300px;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 0.8rem;
+}
+
+.contact-details a {
+  color: #1b1f3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  color: #f29c1f;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-left: 4px solid #7a8a99;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #f29c1f;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d1871a;
+}
+
+.map-section {
+  margin-top: 3rem;
+}
+
+.map-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1b1f3b;
+}
+
+h3 {
+  color: #1b1f3b;
+}
+
+h2 {
+  color: #1b1f3b;
+}
+
+h4 {
+  color: #1b1f3b;
+  
+}
+
+.back {
+  color: white;
+}
+
+/* PROJECT PAGE */
+
+.project-page {
+    background-color: #f9f9f9;
+    padding: 60px 40px;
+    color: #333;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-info h2 {
+    color: #1b1f3b
+    
+}
+
+.project-info h3 {
+    color: #1b1f3b;
+}
+
+.project-info p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.project-image {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: 900px;
+    border: 4px solid #7a8a99;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-image figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+/* === Mobile-First Media Queries for Siyadudula Construction === */
+
+/* Adjust nav layout on small screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Hero section adjustments */
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+}
+
+/* Services grid adapts to vertical stack */
+@media (max-width: 768px) {
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Project page layout stack */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-image,
+  .project-info {
+    width: 100%;
+  }
+}
+
+/* Contact section stacking */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-details,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* Reduce map height on narrow screens */
+@media (max-width: 480px) {
+  .map-section iframe {
+    height: 250px;
+  }
+}
+
+/* Fluid typography for readability */
+html {
+  font-size: 16px;
+}
+@media (min-width: 600px) {
+  html { font-size: 18px; }
+}
+@media (min-width: 1024px) {
+  html { font-size: 20px; }
+}
+
+
+
